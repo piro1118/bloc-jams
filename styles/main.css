@@ -42,8 +42,6 @@ body{
     .column.flow-opposite { float: right; }
 }
 
-
-
 /* Large screens (1024px) */
 @media (min-width: 1024px) {
     html { font-size: 120%; }
@@ -52,4 +50,14 @@ body{
 .container {
     margin: 0 auto;
     max-width: 64rem;
+}
+
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
 }
